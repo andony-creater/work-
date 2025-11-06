@@ -4,9 +4,9 @@
 
    ![image-20251106112124055](/Users/rileyj_g/Library/Application Support/typora-user-images/image-20251106112124055.png)
 
-2. **准备工具**Mac 终端已自带`ssh`和`scp`，无需额外安装，后续通过终端操作服务器。
+   
 
-### 二、创建网络环境（对应阿里云 VPC）
+### 二、创建网络环境
 
 #### 1. 创建虚拟私有云（VPC）
 
@@ -17,11 +17,11 @@
   ![image-20251106112404415](/Users/rileyj_g/Library/Application Support/typora-user-images/image-20251106112404415.png)
 
   - 名称：自定义（`discuz-vpc`）
-  - 地域：华东 - 上海
-  - 子网：手动设置网段，如`192.168.0.0/24
+  - 地域：华东 - 上海一
+  - 子网：手动设置网段`192.168.0.0/24
   - 其他默认，点击【立即创建】。
 
-#### 2. 创建安全组（类似阿里云安全组）
+#### 2. 创建安全组
 
 - 进入【安全组】页面，点击【创建安全组】：
 
@@ -36,7 +36,7 @@
     - 允许 ICMP（ping，可选）
   - 点击【确定】。
 
-### 三、创建 ECS 服务器（对应阿里云 ECS）
+### 三、创建 ECS 服务器
 
 #### 1. 购买 ECS 实例
 
@@ -159,9 +159,9 @@ systemctl enable php8.1-fpm
 nano /etc/nginx/sites-available/default
 ```
 
-#### 2. 修改配置（关键部分）
+#### 2. 修改配置
 
-找到`server { ... }`块，添加 PHP 解析规则和index.php：
+找到`server { ... }`块，添加 PHP 解析规则和**index.php**：
 
 ![image-20251106120323137](/Users/rileyj_g/Library/Application Support/typora-user-images/image-20251106120323137.png)
 
