@@ -1,3 +1,13 @@
+[toc]
+
+
+
+
+
+## 在百度云上布属discuz论坛
+
+
+
 ### 一、前期准备
 
 1. **注册并登录百度智能云账号**访问[百度智能云官网](https://cloud.baidu.com/)，完成注册并登录控制台![image-20251106131225998](/Users/rileyj_g/Library/Application Support/typora-user-images/image-20251106131225998.png)
